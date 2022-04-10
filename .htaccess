@@ -1,0 +1,46 @@
+ErrorDocument 404 /error.php
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^index index.php [NC,L]
+
+RewriteRule ^register login.php?page=reg [NC,L]
+
+RewriteRule ^login login.php [NC,L]
+
+RewriteRule ^handle/register handle/register.php [NC,L]
+
+RewriteRule ^handle/logincheck handle/logincheck.php [NC,L]
+
+RewriteRule ^user_dashboard user_dashboard.php [NC,L]
+
+RewriteRule ^user_cards user_cards.php [NC,L]
+
+RewriteRule ^handle/logout handle/logout.php [NC,L]
+
+RewriteRule ^handle/fetchUserInfo handle/fetchUserInfo.php [NC,L]
+
+RewriteRule ^handle/addCards handle/addCards.php [NC,L]
+
+RewriteRule ^handle/addText handle/addText.php [NC,L]
+
+RewriteRule ^handle/displayCards handle/displayCards.php [NC,L]
+
+RewriteRule ^handle/searchCard handle/searchCard.php [NC,L]
+
+RewriteRule ^handle/fetchAfterCardUser handle/fetchAfterCardUser.php [NC,L]
+
+RewriteRule ^search search.php [NC,L]
+
+RewriteRule ^user_notification user_notification.php [NC,L]
+
+RewriteRule ^user_profile user_profile.php [NC,L]
+
+RewriteRule ^handle/takeAppointment handle/takeAppointment.php [NC,L]
+
+RewriteRule ^handle/notification handle/notification.php [NC,L]
+
+RewriteRule ^handle/removeCards handle/removeCards.php [NC,L]
+
+RewriteRule ^handle/changeDetail handle/changeDetail.php [NC,L]

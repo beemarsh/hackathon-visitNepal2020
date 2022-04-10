@@ -1,0 +1,58 @@
+body, html, *{
+    margin: 0px;
+    padding: 0px;  
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.forms{
+    width: max-content;
+    display: flex;
+}
+form{
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font:20px quicksand;
+    font-weight: bolder;
+    background: #dedede;
+    margin: 20px;
+    box-shadow: 10px 5px 5px 0 rgba(0,0,0,0.2)
+}
+form input, textarea{
+    padding: 5px 10px;
+    font:20px quicksand;
+    width: 400px;
+    border: none;
+    color: #034ea2;
+    border-radius: 3px;
+    background: white;
+    margin: 10px 0;
+}
+h1{
+    margin: 10px 0;
+    font:22px montserrat;
+    font-weight: bolder;
+
+}
+button{
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0 ;
+    font: 20px montserrat;
+    font-weight: bolder;
+    border-radius: 5px;
+    background: #034ea2;
+    color: white;
+}
+.login-form{
+    display: none;
+}
